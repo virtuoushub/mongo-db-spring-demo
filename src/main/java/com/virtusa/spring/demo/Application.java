@@ -1,6 +1,6 @@
 package com.virtusa.spring.demo;
 
-import bookmarks.*;
+import com.joshlong.rest.*;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;

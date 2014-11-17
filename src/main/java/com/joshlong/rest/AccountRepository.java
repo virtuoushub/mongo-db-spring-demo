@@ -1,4 +1,4 @@
-package bookmarks;
+package com.joshlong.rest;
 
 
 import org.springframework.data.jpa.repository.JpaRepository;

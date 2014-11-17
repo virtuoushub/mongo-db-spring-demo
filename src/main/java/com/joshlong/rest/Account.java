@@ -1,4 +1,4 @@
-package bookmarks;
+package com.joshlong.rest;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 

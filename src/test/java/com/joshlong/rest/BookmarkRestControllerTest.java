@@ -1,4 +1,4 @@
-package bookmarks;
+package com.joshlong.rest;
 
 import com.virtusa.spring.demo.Application;
 import org.junit.Assert;
