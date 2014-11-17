@@ -29,4 +29,8 @@ public class Bookmark {
 
     public String uri;
     public String description;
+
+    public Long getId() {
+        return id;
+    }
 }
