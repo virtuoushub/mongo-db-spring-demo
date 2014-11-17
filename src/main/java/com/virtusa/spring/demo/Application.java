@@ -15,6 +15,9 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 import java.util.Arrays;
 
+/**
+ * See: http://stackoverflow.com/a/23366746
+ */
 @Configuration
 @ComponentScan
 @EnableAutoConfiguration
