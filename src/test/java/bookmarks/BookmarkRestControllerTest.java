@@ -128,6 +128,7 @@ public class BookmarkRestControllerTest {
                 .andExpect(status().isCreated());
     }
 
+    @SuppressWarnings("unchecked")
     protected String json(Object o) throws IOException {
         MockHttpOutputMessage mockHttpOutputMessage = new MockHttpOutputMessage();
         this.mappingJackson2HttpMessageConverter.write(
