@@ -4,13 +4,10 @@ import com.joshlong.model.Account;
 import com.joshlong.model.AccountRepository;
 import com.joshlong.model.Bookmark;
 import com.joshlong.model.BookmarkRepository;
-import com.joshlong.rest.*;
 import org.springframework.boot.CommandLineRunner;
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.orm.jpa.EntityScan;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
@@ -23,8 +20,7 @@ import java.util.Arrays;
 @EnableAutoConfiguration
 @EntityScan(basePackageClasses = {Account.class, Bookmark.class})
 @EnableJpaRepositories(basePackageClasses = {AccountRepository.class, BookmarkRepository.class})
-public class Application {
-
+abstract class AbstractDemoApplication {
 
     @Bean
     CommandLineRunner init(AccountRepository accountRepository, BookmarkRepository bookmarkRepository) {
@@ -34,9 +30,5 @@ public class Application {
                     bookmarkRepository.save(new Bookmark(account, "http://bookmark.com/1/" + a, "A description"));
                     bookmarkRepository.save(new Bookmark(account, "http://bookmark.com/2/" + a, "A description"));
                 });
-    }
-
-    public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
     }
 }

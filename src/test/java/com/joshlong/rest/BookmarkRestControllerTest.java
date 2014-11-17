@@ -4,7 +4,7 @@ import com.joshlong.model.Account;
 import com.joshlong.model.AccountRepository;
 import com.joshlong.model.Bookmark;
 import com.joshlong.model.BookmarkRepository;
-import com.virtusa.spring.demo.RestApplication;
+import com.virtusa.spring.demo.RestDemoApplication;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -39,7 +39,7 @@ import static org.springframework.test.web.servlet.setup.MockMvcBuilders.webAppC
  */
 @DirtiesContext
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(classes = RestApplication.class)
+@SpringApplicationConfiguration(classes = RestDemoApplication.class)
 @WebAppConfiguration
 public class BookmarkRestControllerTest {
 

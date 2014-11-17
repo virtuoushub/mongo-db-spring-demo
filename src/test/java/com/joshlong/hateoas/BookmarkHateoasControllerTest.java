@@ -4,7 +4,7 @@ import com.joshlong.model.Account;
 import com.joshlong.model.AccountRepository;
 import com.joshlong.model.Bookmark;
 import com.joshlong.model.BookmarkRepository;
-import com.virtusa.spring.demo.HateoasApplication;
+import com.virtusa.spring.demo.HateoasDemoApplication;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -37,7 +37,7 @@ import static org.springframework.test.web.servlet.setup.MockMvcBuilders.webAppC
  */
 @DirtiesContext
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(classes = HateoasApplication.class)
+@SpringApplicationConfiguration(classes = HateoasDemoApplication.class)
 @WebAppConfiguration
 public final class BookmarkHateoasControllerTest {
 
