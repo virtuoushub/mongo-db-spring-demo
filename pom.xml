@@ -20,6 +20,15 @@
 
   <dependencies>
     <dependency>
+      <groupId>org.springframework.hateoas</groupId>
+      <artifactId>spring-hateoas</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.plugin</groupId>
+      <artifactId>spring-plugin-core</artifactId>
+      <version>${spring-plugin-core.version}</version>
+    </dependency>
+    <dependency>
       <groupId>com.h2database</groupId>
       <artifactId>h2</artifactId>
       <version>${h2.version}</version>
@@ -111,6 +120,7 @@
     <jackson-annotations.verion>2.4.3</jackson-annotations.verion>
     <h2.version>1.4.182</h2.version>
     <json-path.version>1.2.0</json-path.version>
+    <spring-plugin-core.version>1.1.0.RELEASE</spring-plugin-core.version>
   </properties>
 
   <build>

@@ -1,4 +1,4 @@
-package com.joshlong.rest;
+package com.joshlong.model;
 
 
 import org.springframework.data.jpa.repository.JpaRepository;

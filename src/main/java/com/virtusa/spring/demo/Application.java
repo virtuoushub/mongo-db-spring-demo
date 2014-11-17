@@ -1,5 +1,9 @@
 package com.virtusa.spring.demo;
 
+import com.joshlong.model.Account;
+import com.joshlong.model.AccountRepository;
+import com.joshlong.model.Bookmark;
+import com.joshlong.model.BookmarkRepository;
 import com.joshlong.rest.*;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -16,7 +20,6 @@ import java.util.Arrays;
  * See: http://stackoverflow.com/a/23366746
  */
 @Configuration
-@ComponentScan(basePackageClasses = {BookmarkRestController.class})
 @EnableAutoConfiguration
 @EntityScan(basePackageClasses = {Account.class, Bookmark.class})
 @EnableJpaRepositories(basePackageClasses = {AccountRepository.class, BookmarkRepository.class})

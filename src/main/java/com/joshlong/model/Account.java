@@ -1,4 +1,4 @@
-package com.joshlong.rest;
+package com.joshlong.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -11,7 +11,7 @@ import java.util.Set;
 
 
 @Entity
-public class Account {
+public final class Account {
 
     @OneToMany(mappedBy = "account")
     public Set<Bookmark> bookmarks = new HashSet<>();
@@ -30,5 +30,9 @@ public class Account {
     }
 
     Account() { // jpa only
+    }
+
+    public String getUsername() {
+        return username;
     }
 }

@@ -1,5 +1,8 @@
 package com.joshlong.rest;
 
+import com.joshlong.model.AccountRepository;
+import com.joshlong.model.Bookmark;
+import com.joshlong.model.BookmarkRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;

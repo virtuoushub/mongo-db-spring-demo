@@ -1,4 +1,4 @@
-package com.joshlong.rest;
+package com.joshlong.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
 @Entity
-public class Bookmark {
+public final class Bookmark {
 
     @JsonIgnore
     @ManyToOne
@@ -18,7 +18,7 @@ public class Bookmark {
     @GeneratedValue
     public Long id;
 
-    Bookmark() { // jpa only
+    public Bookmark() { // jpa only
     }
 
     public Bookmark(Account account, String uri, String description) {
@@ -32,5 +32,13 @@ public class Bookmark {
 
     public Long getId() {
         return id;
+    }
+
+    public Account getAccount() {
+        return account;
+    }
+
+    public String getUri() {
+        return uri;
     }
 }
