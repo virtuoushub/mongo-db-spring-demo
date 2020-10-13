@@ -111,7 +111,7 @@
     <start-class>com.virtusa.spring.demo.AbstractDemoApplication</start-class>
     <java.minimum.version>1.8</java.minimum.version>
     <maven-compiler-plugin.version>3.2</maven-compiler-plugin.version>
-    <spring-framework.version>4.1.2.RELEASE</spring-framework.version>
+    <spring-framework.version>5.2.9.RELEASE</spring-framework.version>
     <junit.version>4.13.1</junit.version>
     <org.springframework.boot.version>${project.version}</org.springframework.boot.version>
     <!-- 2014-11-17 versions-maven-plugin:2.1:display-plugin-updates -->
